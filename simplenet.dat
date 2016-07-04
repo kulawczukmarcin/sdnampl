@@ -1,0 +1,17 @@
+set NODES := V1 V2 V3 V4 V5 V6;
+set LINKS := 
+			(V1, V2) (V1, V5)
+			(V2, V3) 
+			(V4, V3)
+			(V5, V4);
+			
+set DEMANDS :=
+		(V1, V3);
+set FREQS := L1 L2;
+set S := 1 2 3;
+param h :=
+	1 V1 V3 3
+	2 V1 V3 2
+	3 V1 V3 1;
+
+param k := 1;

@@ -1,0 +1,12 @@
+reset;
+
+model sdn/networkmodel-pstkm.mod;
+
+#data dattest.dat;
+data sdn/simplenet.dat;
+
+option solver cplex;
+#option solver minos;
+
+solve;
+display x,f;

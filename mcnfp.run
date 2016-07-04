@@ -1,0 +1,10 @@
+reset;
+
+model sdn/mcnfp_model.mod;
+data sdn/mcnfp_example_data.dat;
+
+option solver cplex;
+#option solver minos;
+
+solve;
+display x;
